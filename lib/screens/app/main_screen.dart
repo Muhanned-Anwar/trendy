@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:trendy/getx/drawer_getx.dart';
-import 'package:trendy/models/bn_screen.dart';
+import 'package:trendy/models/ui/bn_screen.dart';
 import 'package:trendy/screens/app/navigation_screens/account_screen.dart';
 import 'package:trendy/screens/app/drawer/drawer_content_screen.dart';
 import 'package:trendy/screens/app/drawer/drawer_screen.dart';
