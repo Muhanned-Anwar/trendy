@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         '/register_screen': (context) => const RegisterScreen(),
         '/main_screen': (context) => const MainScreen(),
         '/advertising': (context) => const Advertising(),
-        '/drawer_content_screen': (context) => DrawerContentScreen(),
+        '/drawer_content_screen': (context) => const DrawerContentScreen(),
       },
     );
   }

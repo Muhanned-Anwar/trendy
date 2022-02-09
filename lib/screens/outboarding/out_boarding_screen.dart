@@ -15,14 +15,12 @@ class _OutBoardingScreenState extends State<OutBoardingScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _pageController = PageController(initialPage: 0);
   }
 
   @override
   void dispose() {
-    // TODO: implement dispose
     _pageController.dispose();
     super.dispose();
   }

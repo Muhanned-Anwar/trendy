@@ -98,8 +98,8 @@ class _LoginScreenState extends State<LoginScreen> with Helpers {
             maxLines: 1,
             keyboardType: TextInputType.emailAddress,
             decoration: InputDecoration(
-              contentPadding:
-                  EdgeInsets.only(left: 15, right: 325, top: 31, bottom: 29),
+              contentPadding: const EdgeInsets.only(
+                  left: 15, right: 325, top: 31, bottom: 29),
               hintText: 'Email',
               errorText: _emailError,
               errorBorder: OutlineInputBorder(
@@ -127,7 +127,7 @@ class _LoginScreenState extends State<LoginScreen> with Helpers {
             obscureText: true,
             decoration: InputDecoration(
               contentPadding:
-                  EdgeInsets.only(left: 15, right: 298, top: 31, bottom: 29),
+                  const EdgeInsets.only(left: 15, right: 298, top: 31, bottom: 29),
               hintText: 'Password',
               errorText: _passwordError,
               errorBorder: OutlineInputBorder(
@@ -158,7 +158,7 @@ class _LoginScreenState extends State<LoginScreen> with Helpers {
                     borderRadius: BorderRadius.zero,
                   ),
                 ),
-                onPressed: () => performLogin(),
+                onPressed: () async => await performLogin(),
                 child: const Text(
                   'Login',
                   style: TextStyle(
@@ -210,7 +210,7 @@ class _LoginScreenState extends State<LoginScreen> with Helpers {
     );
   }
 
-  void performLogin() {
+  Future<void> performLogin() async {
     if (checkData()) login();
   }
 
@@ -230,9 +230,8 @@ class _LoginScreenState extends State<LoginScreen> with Helpers {
     setState(() {
       _emailError =
           _emailTextEditingController.text.isEmpty ? 'Enter email' : null;
-      _passwordError = _passwordTextEditingController.text.isEmpty
-          ? 'Enter password'
-          : null;
+      _passwordError =
+          _passwordTextEditingController.text.isEmpty ? 'Enter password' : null;
     });
   }
 

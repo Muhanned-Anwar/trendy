@@ -57,7 +57,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
               AuthLogin(
                 title: 'Login',
                 function: () {
-                  Navigator.pushReplacementNamed(context, '/login_screen');
+                  Navigator.pushNamed(context, '/login_screen');
                 },
                 backgroundColor: Colors.transparent,
               ),
