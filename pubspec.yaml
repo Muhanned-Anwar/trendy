@@ -34,10 +34,11 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  flutter_svg: ^0.22.0
-  google_fonts: ^2.1.0
-  get: ^4.3.8
+  get: ^4.6.1
   http: ^0.13.4
+#  flutter_svg: ^0.22.0
+#  google_fonts: ^2.1.0
+
 
 dev_dependencies:
   flutter_test:
@@ -64,28 +65,13 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - images/launch_screen/logo_white.png
-    - images/out_boarding_screen/image1.jpg
-    - images/out_boarding_screen/image2.jpg
-    - images/out_boarding_screen/image3.jpg
-    - images/auth/auth_background.jpg
-    - images/auth/logo_white.png
-    - images/Icons/Oval.png
-    - images/Icons/btn_wishlist.png
-    - images/Icons/facebookIcon.png
-    - images/Icons/googleIcon.png
-    - images/Icons/mailIcon.png
-    - images/app/main_screen/home_screen/image1.jpg
-    - images/app/main_screen/home_screen/image2.png
-    - images/app/main_screen/home_screen/image3.jpg
-    - images/app/main_screen/home_screen/image4.jpg
-    - images/app/main_screen/home_screen/group.png
-    - images/app/main_screen/icons/menu_icons/ic_menu.png
-    - images/app/main_screen/icons/menu_icons/ic_newin.png
-    - images/app/main_screen/icons/menu_icons/ic_collection.png
-    - images/app/main_screen/icons/menu_icons/ic_clothing.png
-    - images/app/main_screen/icons/menu_icons/ic_accessories.png
-    - images/app/main_screen/icons/menu_icons/ic_shoes.png
-    - images/app/main_screen/icons/menu_icons/ic_sale.png
+    - images/out_boarding_screen/
+    - images/auth/
+    - images/Icons/
+    - images/app/main_screen/home_screen/
+    - images/app/main_screen/icons/menu_icons/
+    - images/app/main_screen/icons/new_in/
+    - images/app/main_screen/new_in/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

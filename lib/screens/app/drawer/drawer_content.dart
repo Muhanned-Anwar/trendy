@@ -73,12 +73,8 @@ class _DrawerContentState extends State<DrawerContent> {
           children: [
             Container(
               margin: EdgeInsets.all(margin.toDouble()),
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
-                // border: Border.all(
-                //   width: 1,
-                //   color: borderColor,
-                // ),
               ),
               child: Row(
                 children: [
@@ -185,6 +181,7 @@ class _DrawerContentState extends State<DrawerContent> {
                           ),
                         ),
                         Visibility(
+                          // Liner progress indicator
                           visible: isLinearProgress,
                           child: LinearProgressIndicator(
                             value: _menProgressValue,
@@ -200,10 +197,36 @@ class _DrawerContentState extends State<DrawerContent> {
               ),
             ),
             SizedBox(height: isLinearProgress ? 53 : 15),
-            const ExpansionTileMenu(
-              path: 'images/app/main_screen/icons/menu_icons/ic_newin.png',
-              title: 'NEW IN',
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.transparent,
+                elevation: 0,
+              ),
+              onPressed: () => Navigator.pushNamed(context, '/new_in_screen'),
+              child: Container(
+                margin: const EdgeInsets.all(20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                        width: 20,
+                        height: 20,
+                        child: Image.asset(
+                          'images/app/main_screen/icons/menu_icons/ic_newin.png',
+                          // fit: BoxFit.cover,
+                        )),
+                    Expanded(
+                        child: Container(
+                            margin: const EdgeInsets.only(left: 20),
+                            child: const Text(
+                              'NEW IN',
+                              style: TextStyle(color: Colors.black, fontSize: 26),
+                            )))
+                  ],
+                ),
+              ),
             ),
+
             const SizedBox(height: 25),
             const ExpansionTileMenu(
               path: 'images/app/main_screen/icons/menu_icons/ic_collection.png',

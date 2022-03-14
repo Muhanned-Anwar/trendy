@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
 class SearchOperator extends StatelessWidget {
-  const SearchOperator({
-    Key? key,
-  }) : super(key: key);
+  double width;
+
+
+  SearchOperator({this.width = 375, Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(top: 15, left: 15, right: 15),
-      width: 375,
+      width: width,
       height: 36,
       decoration: BoxDecoration(
         color: Colors.grey.shade200,

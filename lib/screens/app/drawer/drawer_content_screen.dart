@@ -17,7 +17,7 @@ class _DrawerContentScreenState extends State<DrawerContentScreen> {
         color: Colors.white,
         child: Column(
           children: [
-            const SearchOperator(),
+             SearchOperator(),
             Expanded(
                 child: DrawerContent(
               textColor: Colors.white,

@@ -7,6 +7,7 @@ import 'package:trendy/screens/auth/login_screen.dart';
 import 'package:trendy/screens/auth/register_screen.dart';
 import 'package:trendy/screens/auth/reset_password_screen.dart';
 import 'package:trendy/screens/launch_screen.dart';
+import 'package:trendy/screens/new_in_screen.dart';
 import 'package:trendy/screens/outboarding/out_boarding_screen.dart';
 
 void main() {
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.black,
       ),
       debugShowCheckedModeBanner: false,
-      initialRoute: '/launch_screen',
+      initialRoute: '/main_screen',
       routes: {
         '/launch_screen': (context) => const LaunchScreen(),
         '/out_boarding_screen': (context) => const OutBoardingScreen(),
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
         '/main_screen': (context) => const MainScreen(),
         '/advertising': (context) => const Advertising(),
         '/drawer_content_screen': (context) => const DrawerContentScreen(),
+        '/new_in_screen': (context) => const NewInScreen(),
       },
     );
   }
