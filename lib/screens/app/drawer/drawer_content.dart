@@ -59,7 +59,7 @@ class _DrawerContentState extends State<DrawerContent> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    print('Init');
+    print('Init2');
     _womenProgressValue = _drawerGetX.womenProgressValue;
     _menProgressValue = _drawerGetX.menProgressValue;
     _womenMinHeightProgressValue = _drawerGetX.womenMinHeightProgressValue;
